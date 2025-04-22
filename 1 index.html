@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AK FITNESS </title>
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+   body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgb(255, 255, 255);
+      margin: 0px;
+      padding: 0px;
+      background: url('image/adult-1850925_1280.jpg');
+      /* position:static; */
+   }
+
+   /* providing css to all three content(left,right and mid) */
+   .left {
+      display: inline-block;
+      /* border: 2px solid yellow; */
+      position: absolute;
+      left: 20px;
+      top: 20px;
+   }
+
+   .left img {
+      width: 50px;
+   }
+
+   .left div {
+      line-height: 19px;
+      font: size 26px;
+      text-align: center;
+   }
+
+   .mid {
+      /* to centre the content there is three condition that is display block,width set and margin auto */
+      display: block;
+      width: 50%;
+      margin: 12px auto;
+      border: 3px solid rgb(0, 98, 255);
+   }
+
+   .right {
+      position: absolute;
+      right: 34px;
+      top: 20px;
+      display: inline-block;
+      /* border: 2px rgb(87, 44, 214); */
+   }
+
+   /* giving style in nav bar */
+   .navbar {
+      display: inline-block;
+   }
+
+   .navbar li {
+      display: inline-block;
+      font-size: 25px;
+   }
+
+   /* to color a in navbar  */
+   .navbar li a {
+      color: rgba(255, 255, 255, 0.993);
+      /* to remove the underline  */
+      text-decoration: none;
+      padding: 24px 23px;
+   }
+
+   /* class active means if we have to choose a home then underline pop up when we move cursour on it  */
+   .navbar li a:hover,
+   .navbar li a:active {
+      text-decoration: underline;
+      color: gray;
+   }
+
+   .btn {
+      font-family: 'Baloo Bhai', cursive;
+      margin: 0px 9px;
+      background-color: black;
+      color: white;
+      padding: 5px 12px;
+      border: 3px solid gray;
+      /* border radius is used for round th square */
+      border-radius: 4px;
+      font-size: 12px;
+      /* cursor pointer is used to convert the arrow into hand while click on content */
+      cursor: pointer;
+   }
+
+   /* It is used to color the right content inside when we use cursour on it it show color */
+   .btn:hover {
+      background-color: brown;
+
+   }
+
+   .container {
+      border: 2px solid green;
+      margin: 106px 80px;
+      padding: 75px;
+      width: 50%;
+      border-radius: 30px;
+
+   }
+
+   .form-group input {
+      text-align: center;
+      display: block;
+      width: 400px;
+      padding: 4px;
+      border: 2px solid rgb(72, 0, 255);
+      font-size: 21px;
+      margin: 11px auto;
+      border-radius: 7px;
+      font-family: 'Baloo Bhai', cursive;
+   }
+
+   .container h1 {
+      text-align: center;
+   }
+
+   .container button {
+      display: block;
+      width: 33%;
+      margin: auto;
+
+   }
+</style>
+
+<body>
+   <header class="header">
+      <!-- left box logo  -->
+      <div class="left">
+
+         <!-- if we use nav in left the it show on left side for mid we have to write in mid  -->
+         <!-- <li><a href="#">Home </a></li>
+      <li><a href="#">About us</a> </li>
+      <li><a href="#">Fitness calculator</a></li>
+      <li><a href="#">contact us</a></li> -->
+         <img src="image/heart-7834300_1280.jpg" alt="">
+
+         <div>AK FITNESS</div>
+
+      </div>
+      <!-- mid box for navigation bar -->
+
+      <div class="mid">
+         <ul class="navbar">
+            <li><a href="#" class="active">Home </a></li>
+            <li><a href="#">About us</a> </li>
+            <li><a href="#">Fitness calculator</a></li>
+            <li><a href="#">contact us</a></li>
+         </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+         <button class="btn">call us now </button>
+         <button class="btn">Email now </button>
+      </div>
+   </header>
+   <div class="container">
+      <h1>
+         Join the best GYM in VARANASI </h1>
+      <form action="noaction.php">
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your AGE">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your gender">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Address">
+         </div>
+         <button class="btn">Submit</button>
+      </form>
+   </div>
+</body>
+
+</html>
